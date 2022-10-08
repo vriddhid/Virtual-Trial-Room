@@ -1,0 +1,94 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: no-repeat;
+    background-size: cover;
+}
+.navigation-manual{
+    position: left;
+    width: 1519px;
+    margin-top: -30px;
+    display: flex;
+    justify-content: left;
+}
+.form{
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    background: rgba(255,255,255,0.85);
+    opacity: 95%;
+    max-width: 790px;
+    max-height: 460px;
+    margin: 140px auto 100px;
+    margin-left: 322px;
+    padding: 10px 45px 30px 45px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+}
+.form b{
+    font-size: 30px;
+}
+.form p{
+    font-size: 15px;
+    padding: 1px;
+    text-align: center;
+}
+.form select{
+    outline: 0;
+    border-radius: 10px;
+    background: #F2F2F2;
+    width: 300px;
+    border: 0;
+    margin: 0 15px 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+
+}
+.form input{ 
+    outline: 0;
+    border-radius: 10px;
+    background: #F2F2F2;
+    width: 300px;
+    border: 0;
+    margin: 0 15px 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form input:hover,.form select:hover{
+    background-color: #D3F8F9;
+    transition: all 1s ease 0s;
+}
+.form input:focus , .form select:focus{
+    background-color: #D3F8F9;
+    transition: all 1s ease 0s;
+}
+.form button{
+    text-transform: uppercase;
+    outline: 0;
+    border-radius: 10px;
+    background: #1ADBE5;
+    width: 300px;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 0 15px 0;
+    cursor: pointer;
+}
+.form button:hover, .form button:active, .form button:focus{
+    background-color: #06C5CF;
+    transition: all 1s ease 0s;
+}
+.form .message{
+    margin: 15px 0 0;
+    color:black;
+    font-size: 12px;
+}
+.form .message a{
+    color: #06C5CF;
+    text-decoration: none;
+}
+::placeholder{
+    color: black;
+}

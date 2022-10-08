@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="Sign up.css">
+    <script>
+      function get_data(){
+         var username = document.getElementById("username").value
+         var name = document.getElementById("name").value
+         var email = document.getElementById("emailID").value
+         var mobile_number = document.getElementById("mobile_number").value
+         var password = document.getElementById("password").value
+         var Gender = document.getElementById("gender").value
+         var DOB = document.getElementById("DOB").value
+         var country = document.getElementById("country").value
+         var userDetails = {"username":username,"name":name,"email":email,"mobileNumber":mobile_number,"password":password,"gender":Gender,"DOB":DOB,"country":country} 
+        console.log(userDetails)
+        var users=localStorage.getItem("users")
+        var user=JSON.parse(users||"[]")
+        user.push(userDetails)
+        localStorage.setItem("users",JSON.stringify(user))
+        }
+        function redirect(){
+            return true
+        }
+    </script>
+</head>
+<body>
+    <div class="form">
+    <p><b>SIGN UP</b></p>
+    <form onsubmit="return redirect()" action="login.html">
+    <pre>
+        <input required type="text" name="username" id="username" placeholder="username"><input required type="text" name="name" id="name" placeholder="Enter your name">
+        <input required type="email" name="emailID" id="emailID" placeholder="Enter your email-ID"><input required type="number" name="mobile_number" id="mobile_number" placeholder="Enter your mobile number">
+        <input required type="password" pattern="[0-9a-zA-Z@]{8,}" name="password" id="password" placeholder="Enter your password"><select name="Gender" id="gender" ><option value="" selected hidden disabled>Select Gender</option> <option value="Male">Male</option> <option value="Female">Female</option> <option value="Others">Others</option> </select>    
+        <input required type="date" name="DOB" id="DOB" placeholder="Enter your DOB"><select name="country" id="country" > <option value=""  selected hidden disabled>Select Country</option> <option value="India">India</option> <option value="Singapore">Singapore</option> <option value="Qatar">Qatar</option> </select> 
+        <button type="submit" onclick="get_data()">SUBMIT</button><button type="reset">RESET</button>
+        </pre>
+        <p class="message">Already registered? <a href="login.html">Back to login</a></p>
+    </form>
+    </div>
+    </body>
+    </html>
