@@ -13,7 +13,5 @@ Domain and tools:
 
 DONE BY
 
-K. Nisha
-
-Vriddhi Darak
-Nisha {https://github.com/Nishfish12}
+* [Vriddhi Darak](https://github.com/vriddhid)
+* [K. Nisha](https://github.com/Nishfish12)
